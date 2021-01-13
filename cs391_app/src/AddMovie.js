@@ -2,12 +2,38 @@ import { Form, Col, Button, Container, InputGroup, FormControl     } from 'react
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
 
+
+
+if(localStorage.getItem("Salloon 1") == null || localStorage.getItem("Salloon 1") === undefined){
+  localStorage.setItem("Salloon 1", JSON.stringify({"movieName":"Not Found","movieType":"","movieSum":"","movieDate":"","movieSaloon":"Salloon 1","movieProducer":""}));
+}
+
+if(localStorage.getItem("Salloon 2") == null || localStorage.getItem("Salloon 2") === undefined){
+  localStorage.setItem("Salloon 2", JSON.stringify({"movieName":"Not Found","movieType":"","movieSum":"","movieDate":"","movieSaloon":"Salloon 2","movieProducer":""}));
+}
+
+if(localStorage.getItem("Salloon 3") == null || localStorage.getItem("Salloon 3") === undefined){
+  localStorage.setItem("Salloon 3", JSON.stringify({"movieName":"Not Found","movieType":"","movieSum":"","movieDate":"","movieSaloon":"Salloon 3","movieProducer":""}));
+}
+
+if(localStorage.getItem("Salloon 4") == null || localStorage.getItem("Salloon 4") === undefined){
+  localStorage.setItem("Salloon 4", JSON.stringify({"movieName":"Not Found","movieType":"","movieSum":"","movieDate":"","movieSaloon":"Salloon 4","movieProducer":""}));
+}
+
+if(localStorage.getItem("Salloon 5") == null || localStorage.getItem("Salloon 5") === undefined){
+  localStorage.setItem("Salloon 5", JSON.stringify({"movieName":"Not Found","movieType":"","movieSum":"","movieDate":"","movieSaloon":"Salloon 5","movieProducer":""}));
+}
+
+
 class AddMovie extends Component {
 
   userData;
 
   constructor(props) {
       super(props);
+
+
+    
 
       this.onChangeMovieName = this.onChangeMovieName.bind(this);
       this.onChangeMovieType = this.onChangeMovieType.bind(this);
@@ -75,7 +101,7 @@ onChangeMovieProducer(e) {
 
   componentWillUpdate(nextProps, nextState) {
       // localStorage.setItem(this.state.movieSaloon, JSON.stringify(nextState));
-      // for saving before rendering
+      // for saving after rendering
   }
 
 
@@ -147,6 +173,19 @@ onChangeMovieProducer(e) {
 </Container>
 
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       )
   }

@@ -1,6 +1,8 @@
 import { Form, Col, Button, Container, InputGroup, FormControl     } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
+import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 class DeleteMovie extends Component {
 
@@ -23,8 +25,8 @@ class DeleteMovie extends Component {
 
   onSubmit(e) {
     e.preventDefault()
-    localStorage.setItem(this.state.movieSaloon, JSON.stringify({"movieName":"","movieType":"","movieSum":"","movieDate":"","movieSaloon":this.state.movieSaloon,"movieProducer":""}));
-
+    localStorage.setItem(this.state.movieSaloon, JSON.stringify({"movieName":"Not Found","movieType":"","movieSum":"","movieDate":"","movieSaloon":this.state.movieSaloon,"movieProducer":""}));
+    toast.error('Movie Successfully Deleted', {position: toast.POSITION.TOP_CENTER});
 }
 
 

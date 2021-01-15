@@ -1,6 +1,8 @@
 import { Form, Col, Button, Container, InputGroup, FormControl     } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
+import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -25,9 +27,14 @@ if(localStorage.getItem("Salloon 5") == null || localStorage.getItem("Salloon 5"
 }
 
 
+
+
+toast.configure()
 class AddMovie extends Component {
 
   userData;
+
+  
 
   constructor(props) {
       super(props);
@@ -56,6 +63,9 @@ class AddMovie extends Component {
 
       }
   }
+
+
+
 
   // Form Events
   onChangeMovieName(e) {
@@ -91,6 +101,7 @@ onChangeMovieProducer(e) {
       //window.alert("on submit is called.")
       e.preventDefault()
       localStorage.setItem(this.state.movieSaloon, JSON.stringify(this.state));
+      toast.success('Movie Successfully Submitted', {position: toast.POSITION.TOP_CENTER});
 
   }
 
@@ -104,8 +115,11 @@ onChangeMovieProducer(e) {
       // for saving after rendering
   }
 
+ 
+
 
   render() {
+
       return (
 
 
@@ -169,22 +183,9 @@ onChangeMovieProducer(e) {
     Submit
   </Button>
 </Form>
-
 </Container>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
       )

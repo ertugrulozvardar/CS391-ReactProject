@@ -100,6 +100,7 @@ onChangeMovieProducer(e) {
   onSubmit(e) {
       //window.alert("on submit is called.")
       e.preventDefault()
+      e.target.reset();
       localStorage.setItem(this.state.movieSaloon, JSON.stringify(this.state));
       toast.success('Movie Successfully Submitted', {position: toast.POSITION.TOP_CENTER});
 

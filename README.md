@@ -4,6 +4,12 @@
 
 This project aims to provide a lightweight React application for movie theaters with functionalities such as movie adding removing for admins and seat reservation for customers.
 
+## Some known bugs:
+
+After adding a movie to the localstorage and moving to the Movies page, please refredh the page to see the movies. 
+We tried to put images for the saloons but had some problems with saving images to localstorage using base64, thats why we deleted the related codes and not used them.
+Some inputs were not resetted after submitting the add movie form. Some of them are resetted but there is a problem with the text inputs.
+
 ## Usage Scenarios:
 
 ### Case I (Add Movie)

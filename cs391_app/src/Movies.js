@@ -31,7 +31,7 @@ class Movies extends Component {
           <Row className="justify-content-md-center">
             <Col xs lg="3">
               <Card style={{ width: "18rem" }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+               
                 <Card.Body>
                   <Card.Title>{saloon_1_data.movieSaloon}</Card.Title>
                   <Card.Text>
@@ -46,7 +46,7 @@ class Movies extends Component {
 
             <Col xs lg="3">
               <Card style={{ width: "18rem" }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+              
                 <Card.Body>
                   <Card.Title>{saloon_2_data.movieSaloon}</Card.Title>
                   <Card.Text>
@@ -61,7 +61,7 @@ class Movies extends Component {
 
             <Col xs lg="3">
               <Card style={{ width: "18rem" }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+      
                 <Card.Body>
                   <Card.Title>{saloon_3_data.movieSaloon}</Card.Title>
                   <Card.Text>
@@ -78,7 +78,7 @@ class Movies extends Component {
           <Row className="justify-content-md-center">
             <Col xs lg="3">
               <Card style={{ width: "18rem" }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+           
                 <Card.Body>
                   <Card.Title>{saloon_4_data.movieSaloon}</Card.Title>
                   <Card.Text>
@@ -93,7 +93,7 @@ class Movies extends Component {
 
             <Col xs lg="3">
               <Card style={{ width: "18rem" }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+             
                 <Card.Body>
                   <Card.Title>{saloon_5_data.movieSaloon}</Card.Title>
                   <Card.Text>
